@@ -1,0 +1,21 @@
+body {
+  background-image: url('../public/kya1.jpeg'), url('../public/kya2.jpeg');
+  background-size: 50% 100%, 50% 100%; /* Each takes half of the screen */
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed; /* Keeps background stable */
+    opacity: 1; /* Adjust transparency */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+@media (max-width: 768px) {
+  body {
+      background-size: 100% 50%, 100% 60%; /* Each image takes half of the height */
+      background-position: top, bottom; /* One on top, one on bottom */
+  }
+}
