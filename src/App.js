@@ -30,10 +30,12 @@ export default function Home() {
 
   useEffect(() => {
     setMensaje(mensajes[Math.floor(Math.random() * mensajes.length)]);
+    document.title = "❣️ K&A ❣️";
   }, []);
 
   const handleClick = useCallback(() => {
     setOpen(true);
+    
   }, []);
 
   const handleMoveButtonClick = useCallback(() => {
